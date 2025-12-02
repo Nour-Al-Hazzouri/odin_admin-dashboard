@@ -1,5 +1,41 @@
-* {
+/* 
+General Styling for the whole document
+*/
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 
+Start Main Layout
+*/
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    width: 100%;
+    height: 100%;
+}
+aside{
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    gap: 30px;
+    grid-row: 1 / 3;
+    background-color: blue;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 20px;
+}
+header {
+    grid-column: 2 / 3;
+    border: 1px solid black;
 }
